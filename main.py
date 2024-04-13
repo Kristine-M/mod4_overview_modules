@@ -1,7 +1,7 @@
 # task 1
 import mood_responses
-# mood = input("How are you feeling today? ")
-# print(mood_responses.mood_response(mood))
+mood = input("How are you feeling today? ")
+print(mood_responses.mood_response(mood))
 
 
 # task 2.1
@@ -88,8 +88,10 @@ while (user_input != 8): #loops until user wants to quit
         filename = input("What filename do you want to import your contacts from: ")
         contacts_manager.import_contact(contact_dict, filename)
         
-    # contacts_manager.menu()
-    # user_input = contacts_manager.valid_input()   
+    contacts_manager.menu()
+    user_input = contacts_manager.valid_input()   
+    
+# task 2.2
 
 from datetime import datetime
 
